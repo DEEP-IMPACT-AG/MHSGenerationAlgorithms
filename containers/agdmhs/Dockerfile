@@ -1,5 +1,5 @@
 # Set up variables
-FROM algorun/algorun:latest
+FROM algorun/algorun:16.04
 MAINTAINER Andrew Gainer-Dewar, Ph.D. <andrew.gainer.dewar@gmail.com>
 
 # Add any algorithm dependencies here
