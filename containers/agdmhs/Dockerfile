@@ -11,7 +11,7 @@ RUN apt-get update \
     python-dev \
     python-pip \
     git \
-    make \
+    build-essentials \
     && rm -rf /var/lib/apt/lists/
 
 RUN git clone https://github.com/simplejson/simplejson \
