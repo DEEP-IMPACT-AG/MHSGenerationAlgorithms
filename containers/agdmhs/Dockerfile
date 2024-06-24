@@ -10,6 +10,7 @@ RUN apt-get update \
     libboost-system-dev \
     python-dev \
     python-pip \
+    git \
     && rm -rf /var/lib/apt/lists/
 
 RUN git clone https://github.com/simplejson/simplejson \
