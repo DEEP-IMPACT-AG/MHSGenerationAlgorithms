@@ -12,8 +12,12 @@ RUN apt-get update \
     python-pip \
     && rm -rf /var/lib/apt/lists/
 
-RUN pip install \
-    simplejson
+RUN git clone https://github.com/simplejson/simplejson \
+    && cd simplejson \
+    && git checkout v3.11.0 \
+    && python setup.py install \
+    && cd .. \
+    && rm -rf simplejson
 
 # Fetch and build the code
 COPY ./src /home/algorithm/src/
